@@ -47,6 +47,12 @@ header {
   justify-content: space-between;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .logo {
   font-size: 1.25rem;
   font-weight: 700;
@@ -74,6 +80,23 @@ nav a:hover,
 nav a.active {
   color: var(--text);
   background: var(--bg-hover);
+}
+
+.lang-toggle {
+  padding: 8px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.lang-toggle:hover {
+  color: var(--text);
+  border-color: var(--accent);
 }
 
 /* ---------- Общие секции ---------- */
@@ -431,6 +454,10 @@ footer {
   .nav {
     flex-direction: column;
     gap: 12px;
+  }
+  .nav-right {
+    flex-wrap: wrap;
+    justify-content: center;
   }
   section {
     padding-top: 140px;

@@ -12,67 +12,70 @@
   <header>
     <div class="nav">
       <a href="#home" class="logo">DrChuk</a>
-      <nav>
-        <ul>
-          <li><a href="#about">Обо мне</a></li>
-          <li><a href="#portfolio">Портфолио</a></li>
-          <li><a href="#contacts">Контакты</a></li>
-        </ul>
-      </nav>
+      <div class="nav-right">
+        <nav>
+          <ul>
+            <li><a href="#about" data-i18n="nav.about">Обо мне</a></li>
+            <li><a href="#portfolio" data-i18n="nav.portfolio">Портфолио</a></li>
+            <li><a href="#contacts" data-i18n="nav.contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <button id="langToggle" class="lang-toggle" type="button" aria-label="Switch language">EN</button>
+      </div>
     </div>
   </header>
 
   <!-- Главный экран -->
   <section class="hero" id="home">
-    <h1>Привет, я <em>DrChuk</em></h1>
+    <h1><span data-i18n="hero.greeting">Привет, я</span> <em>DrChuk</em></h1>
     <p class="typing"><span id="typed"></span><span class="cursor"></span></p>
     <div class="hero-buttons">
-      <a href="#portfolio" class="btn btn-primary">Мои работы</a>
-      <a href="#contacts" class="btn btn-outline">Связаться со мной</a>
+      <a href="#portfolio" class="btn btn-primary" data-i18n="hero.work">Мои работы</a>
+      <a href="#contacts" class="btn btn-outline" data-i18n="hero.contact">Связаться со мной</a>
     </div>
   </section>
 
   <!-- Обо мне -->
   <section id="about">
-    <h2 class="reveal">Обо мне</h2>
-<div class="about-content">
+    <h2 class="reveal" data-i18n="about.title">Обо мне</h2>
+    <div class="about-content">
       <div class="card reveal">
-        <h3>👨‍💻 Кто я</h3>
-        <p>Разрабатываю решения для автоматизации и веб-приложений, используя современные AI-инструменты. Владею Python, умею работать с системными API (Windows hooks, audio control), создаю качественные интерфейсы.</p>
+        <h3 data-i18n="about.who.title">👨‍💻 Кто я</h3>
+        <p data-i18n="about.who.text">Разрабатываю решения для автоматизации и веб-приложений, используя современные AI-инструменты. Владею Python, умею работать с системными API (Windows hooks, audio control), создаю качественные интерфейсы.</p>
       </div>
       <div class="card reveal">
-        <h3>⚡ Что я делаю</h3>
-        <p>Автоматизирую рутинные задачи, разрабатываю веб-приложения и интегрирую AI-инструменты в рабочие процессы. Работаю с системными API Windows и собираю всё в аккуратные, удобные интерфейсы.</p>
+        <h3 data-i18n="about.doing.title">⚡ Что я делаю</h3>
+        <p data-i18n="about.doing.text">Автоматизирую рутинные задачи, разрабатываю веб-приложения и интегрирую AI-инструменты в рабочие процессы. Работаю с системными API Windows и собираю всё в аккуратные, удобные интерфейсы.</p>
       </div>
       <div class="card reveal">
-        <h3>🎯 Почему я</h3>
-        <p>Честные сроки, внимание к деталям и живой интерес к новым технологиям. Разбираюсь в задаче до конца и довожу решения до работающего результата.</p>
+        <h3 data-i18n="about.why.title">🎯 Почему я</h3>
+        <p data-i18n="about.why.text">Честные сроки, внимание к деталям и живой интерес к новым технологиям. Разбираюсь в задаче до конца и довожу решения до работающего результата.</p>
       </div>
     </div>
     <div class="skills reveal">
-      <span class="tag">Python</span>
-      <span class="tag">AI-инструменты</span>
-      <span class="tag">Автоматизация</span>
-      <span class="tag">Windows API</span>
-      <span class="tag">JavaScript</span>
-      <span class="tag">HTML/CSS</span>
+      <span class="tag" data-i18n="tag.python">Python</span>
+      <span class="tag" data-i18n="tag.ai">AI-инструменты</span>
+      <span class="tag" data-i18n="tag.automation">Автоматизация</span>
+      <span class="tag" data-i18n="tag.win">Windows API</span>
+      <span class="tag" data-i18n="tag.js">JavaScript</span>
+      <span class="tag" data-i18n="tag.html">HTML/CSS</span>
     </div>
   </section>
 
   <!-- Портфолио -->
   <section id="portfolio">
-<h2 class="reveal">Портфолио</h2>
+    <h2 class="reveal" data-i18n="portfolio.title">Портфолио</h2>
     <div class="portfolio-grid">
       <a href="coffee-landing/index.html" target="_blank" rel="noopener" class="project-link">
         <article class="project reveal">
           <div class="project-thumb thumb-2">☕</div>
           <div class="project-body">
-            <h3>Лендинг для кофейни</h3>
-            <p>Одностраничный сайт с меню, отзывами и формой бронирования столика.</p>
+            <h3 data-i18n="project.coffee.title">Лендинг для кофейни</h3>
+            <p data-i18n="project.coffee.desc">Одностраничный сайт с меню, отзывами и формой бронирования столика.</p>
             <div class="project-tags">
-              <span>HTML</span><span>CSS</span><span>JS-анимации</span>
+              <span>HTML</span><span>CSS</span><span data-i18n="tag.jsanim">JS-анимации</span>
             </div>
-            <div class="project-link-hint">Открыть проект ↗</div>
+            <div class="project-link-hint" data-i18n="hint.open">Открыть проект ↗</div>
           </div>
         </article>
       </a>
@@ -81,11 +84,11 @@
           <div class="project-thumb thumb-1">🎙️</div>
           <div class="project-body">
             <h3>MicMute</h3>
-            <p>Системная утилита для быстрого отключения микрофона горячими клавишами.</p>
+            <p data-i18n="project.mic.desc">Системная утилита для быстрого отключения микрофона горячими клавишами.</p>
             <div class="project-tags">
               <span>Python</span><span>Windows</span><span>Hotkeys</span>
             </div>
-            <div class="project-link-hint">Открыть на GitHub ↗</div>
+            <div class="project-link-hint" data-i18n="hint.github">Открыть на GitHub ↗</div>
           </div>
         </article>
       </a>
@@ -94,11 +97,11 @@
           <div class="project-thumb thumb-3">⌨️</div>
           <div class="project-body">
             <h3>Auto-Key</h3>
-            <p>Инструмент для автоматизации набора текста и работы с клавиатурой.</p>
+            <p data-i18n="project.key.desc">Инструмент для автоматизации набора текста и работы с клавиатурой.</p>
             <div class="project-tags">
-              <span>Python</span><span>Windows</span><span>Автоматизация</span>
+              <span>Python</span><span>Windows</span><span data-i18n="tag.automation">Автоматизация</span>
             </div>
-            <div class="project-link-hint">Открыть на GitHub ↗</div>
+            <div class="project-link-hint" data-i18n="hint.github">Открыть на GitHub ↗</div>
           </div>
         </article>
       </a>
@@ -107,17 +110,17 @@
 
   <!-- Контакты -->
   <section id="contacts">
-    <h2 class="reveal">Контакты</h2>
+    <h2 class="reveal" data-i18n="contacts.title">Контакты</h2>
     <div class="contacts-wrapper reveal">
-<p>Есть идея или проект? Пишите — обсудим задачи, сроки и стоимость. Отвечаю быстро!</p>
+      <p data-i18n="contacts.text">Есть идея или проект? Пишите — обсудим задачи, сроки и стоимость. Отвечаю быстро!</p>
       <div class="contact-links">
-        <a href="https://github.com/DrChuk" target="_blank" rel="noopener" class="contact-link"><svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg> GitHub</a>
+        <a href="https://github.com/DrChuk" target="_blank" rel="noopener" class="contact-link"><svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg> <span data-i18n="contacts.github">GitHub</span></a>
       </div>
     </div>
   </section>
 
   <footer>
-    © 2026 DrChuk · Создаю сайты с душой 💙
+    <span data-i18n="footer">© 2026 DrChuk · Создаю сайты с душой 💙</span>
   </footer>
 
   <button id="toTop" title="Наверх">↑</button>
