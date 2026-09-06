@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DrChuk — Разработчик | Сайты на заказ</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav">
+      <a href="#home" class="logo">DrChuk</a>
+      <nav>
+        <ul>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#portfolio">Портфолио</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Главный экран -->
+  <section class="hero" id="home">
+    <h1>Привет, я <em>DrChuk</em></h1>
+    <p class="typing"><span id="typed"></span><span class="cursor"></span></p>
+    <div class="hero-buttons">
+      <a href="#portfolio" class="btn btn-primary">Мои работы</a>
+      <a href="#contacts" class="btn btn-outline">Связаться со мной</a>
+    </div>
+  </section>
+
+  <!-- Обо мне -->
+  <section id="about">
+    <h2 class="reveal">Обо мне</h2>
+<div class="about-content">
+      <div class="card reveal">
+        <h3>👨‍💻 Кто я</h3>
+        <p>Разрабатываю решения для автоматизации и веб-приложений, используя современные AI-инструменты. Владею Python, умею работать с системными API (Windows hooks, audio control), создаю качественные интерфейсы.</p>
+      </div>
+      <div class="card reveal">
+        <h3>⚡ Что я делаю</h3>
+        <p>Автоматизирую рутинные задачи, разрабатываю веб-приложения и интегрирую AI-инструменты в рабочие процессы. Работаю с системными API Windows и собираю всё в аккуратные, удобные интерфейсы.</p>
+      </div>
+      <div class="card reveal">
+        <h3>🎯 Почему я</h3>
+        <p>Честные сроки, внимание к деталям и живой интерес к новым технологиям. Разбираюсь в задаче до конца и довожу решения до работающего результата.</p>
+      </div>
+    </div>
+    <div class="skills reveal">
+      <span class="tag">Python</span>
+      <span class="tag">AI-инструменты</span>
+      <span class="tag">Автоматизация</span>
+      <span class="tag">Windows API</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">HTML/CSS</span>
+    </div>
+  </section>
+
+  <!-- Портфолио -->
+  <section id="portfolio">
+<h2 class="reveal">Портфолио</h2>
+    <div class="portfolio-grid">
+      <a href="coffee-landing/index.html" target="_blank" rel="noopener" class="project-link">
+        <article class="project reveal">
+          <div class="project-thumb thumb-2">☕</div>
+          <div class="project-body">
+            <h3>Лендинг для кофейни</h3>
+            <p>Одностраничный сайт с меню, отзывами и формой бронирования столика.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JS-анимации</span>
+            </div>
+            <div class="project-link-hint">Открыть проект ↗</div>
+          </div>
+        </article>
+      </a>
+      <a href="https://github.com/DrChuk/MicMute" target="_blank" rel="noopener" class="project-link">
+        <article class="project reveal">
+          <div class="project-thumb thumb-1">🎙️</div>
+          <div class="project-body">
+            <h3>MicMute</h3>
+            <p>Системная утилита для быстрого отключения микрофона горячими клавишами.</p>
+            <div class="project-tags">
+              <span>Python</span><span>Windows</span><span>Hotkeys</span>
+            </div>
+            <div class="project-link-hint">Открыть на GitHub ↗</div>
+          </div>
+        </article>
+      </a>
+      <a href="https://github.com/DrChuk/Auto-Key" target="_blank" rel="noopener" class="project-link">
+        <article class="project reveal">
+          <div class="project-thumb thumb-3">⌨️</div>
+          <div class="project-body">
+            <h3>Auto-Key</h3>
+            <p>Инструмент для автоматизации набора текста и работы с клавиатурой.</p>
+            <div class="project-tags">
+              <span>Python</span><span>Windows</span><span>Автоматизация</span>
+            </div>
+            <div class="project-link-hint">Открыть на GitHub ↗</div>
+          </div>
+        </article>
+      </a>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contacts">
+    <h2 class="reveal">Контакты</h2>
+    <div class="contacts-wrapper reveal">
+<p>Есть идея или проект? Пишите — обсудим задачи, сроки и стоимость. Отвечаю быстро!</p>
+      <div class="contact-links">
+        <a href="https://github.com/DrChuk" target="_blank" rel="noopener" class="contact-link">🐙 GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 DrChuk · Создаю сайты с душой 💙
+  </footer>
+
+  <button id="toTop" title="Наверх">↑</button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
