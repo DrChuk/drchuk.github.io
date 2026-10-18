@@ -329,6 +329,7 @@ h2 {
 .thumb-1 { background: linear-gradient(135deg, #1a2a4a, #16213e); }
 .thumb-2 { background: linear-gradient(135deg, #2a1a3a, #201a33); }
 .thumb-3 { background: linear-gradient(135deg, #1a3a2e, #16301f); }
+.thumb-4 { background: linear-gradient(135deg, #1a393a, #163030); }
 
 .project-body {
   padding: 22px;
